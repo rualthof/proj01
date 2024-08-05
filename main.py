@@ -3,7 +3,7 @@ import flet as ft
 
 def main(page: ft.Page):
     page.title = "Rudimar's App"
-    page.add(ft.Text("Rudimar Althof's Site"))
+    page.add(ft.Text("Rudimar Althof's Site - dev"))
 
 
 ft.app(main)
