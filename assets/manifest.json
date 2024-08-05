@@ -1,0 +1,10 @@
+{
+    "name": "Rudimar Althof's App",
+    "short_name": "RA's App",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#aabb00",
+    "theme_color": "#ff0000",
+    "description": "Rudimar Site - the best of Power Apps stuff",
+    "orientation": "natural"
+}
