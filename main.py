@@ -16,7 +16,5 @@ print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
 print(os.environ.get("API"))
 #print(os.environ)
-cf = CloudFlare.CloudFlare()
-print(cf)
 
 ft.app(main)
