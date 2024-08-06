@@ -1,5 +1,15 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import flet as ft
 import os
+from supabase import create_client
+
+url = os.environ.get("SUPABASE_URL")
+key = os.environ.get("SUPABASE_KEY")
+supabase = create_client(url, key)
+
+print (supabase)
 
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 
@@ -16,6 +26,9 @@ print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
 print(os.environ.get("API"))
 print(os.environ)
+
+
+
 
 ft.app(main)
  
