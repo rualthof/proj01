@@ -7,9 +7,6 @@ from supabase import create_client
 
 url = os.environ.get("SUPABASE_URL")
 key = os.environ.get("SUPABASE_KEY")
-supabase = create_client(url, key)
-
-print (supabase)
 
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 
