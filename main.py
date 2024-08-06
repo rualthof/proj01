@@ -1,10 +1,11 @@
 import flet as ft
 import os
-import json
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 def on_fetch(request):
-    error = json.dumps({ "error": "The `cf` object is not available inside the preview." })
-    data = request.cf if request.cf is not None else error
+    data = request.cf if request.cf is not None else None
     print("on fetch")
     print(request)
     print(data)
