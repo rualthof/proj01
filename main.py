@@ -5,7 +5,7 @@ api = os.getenv("API") or os.environ.get("API") or "no API set"
 
 def main(page: ft.Page):
     page.title = "Rudimar's App"
-    page.add(ft.Text("Rudimar Althof's Site - dev test"))
+    page.add(ft.Text("Rudimar Althof's Site - dev test push"))
     print("API: ", api)
     page.add(ft.Text("API: " + api))
 
