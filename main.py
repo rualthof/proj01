@@ -1,5 +1,6 @@
 import flet as ft
 import os
+import CloudFlare
 
 async def on_fetch(request, env):
     data = request.cf if request.cf is not None else None
@@ -27,5 +28,7 @@ print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
 print(os.environ.get("API"))
 #print(os.environ)
+cf = CloudFlare.CloudFlare()
+print(cf)
 
-#ft.app(main)
+ft.app(main)
