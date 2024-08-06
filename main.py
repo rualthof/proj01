@@ -9,17 +9,6 @@ print(os.getenv("API"))
 print(os.environ.get("API"))
 print(os.environ)
 
-#cf = CloudFlare.CloudFlare()
-#print(cf)
-
-client = CloudFlare(
-    # This is the default and can be omitted
-    api_email=os.environ.get("CLOUDFLARE_EMAIL"),
-    # This is the default and can be omitted
-    api_key=os.environ.get("CLOUDFLARE_API_KEY"),
-)
-
-print(client)
 
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 
