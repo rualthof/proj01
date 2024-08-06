@@ -1,6 +1,5 @@
 import flet as ft
 import os
-import CloudFlare
 
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 

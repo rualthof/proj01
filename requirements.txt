@@ -1,2 +1,1 @@
 flet==0.22.*
-cloudflare==2.19.*
