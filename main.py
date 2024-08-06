@@ -1,6 +1,6 @@
+#!/usr/bin/env python
 import flet as ft
 import os
-from CloudFlare import CloudFlare
 
 #supabase8836#
 print(os.getenv("VIRTUAL_ENV"))
@@ -9,8 +9,8 @@ print(os.getenv("API"))
 print(os.environ.get("API"))
 print(os.environ)
 
-cf = CloudFlare.CloudFlare()
-print(cf)
+#cf = CloudFlare.CloudFlare()
+#print(cf)
 
 client = CloudFlare(
     # This is the default and can be omitted
