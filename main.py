@@ -1,7 +1,7 @@
 import flet as ft
 import os
 
-#supabase8836# 
+#supabase8836#
 print(os.getenv("VIRTUAL_ENV"))
 print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
