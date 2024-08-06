@@ -1,5 +1,7 @@
 import flet as ft
 import os
+
+"""
 from cfkv import KVStore
 
 #store = KVStore(namespace_id="1b73c708fab441abad9ca199aca6c5db", account_id="66e8de2e2d9662d21afea4ea9389a0f2", api_key="fKICUL8p6XvAqxcH3XXeWAjszZxDkDJQAoAjsdzw")
@@ -8,6 +10,7 @@ print(store)
 key = "API"
 get = store.get(key)
 print("KV value: ", get)
+"""
 
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 
