@@ -15,7 +15,7 @@ print(os.getenv("VIRTUAL_ENV"))
 print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
 print(os.environ.get("API"))
-#print(os.environ)
+print(os.environ)
 
 ft.app(main)
  
