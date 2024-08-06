@@ -2,17 +2,6 @@ import flet as ft
 import os
 import CloudFlare
 
-async def on_fetch(request, env):
-    data = request.cf if request.cf is not None else None
-    print("on fetch")
-    print(request)
-    print(data)
-    bar = await env.FOO.get("bar")
-    print(env)
-    print(bar)
-    #headers = Headers.new({"content-type":"application/json"}.items())
-    #return Response.new(JSON.stringify(data, None, 2), headers=headers)
-
 api = os.getenv("API") or os.environ.get("API") or "no API set"
 
 def main(page: ft.Page):
