@@ -6,8 +6,11 @@ import requests
 import flet as ft
 import os
 
-supabase_url = os.environ.get("SUPABASE_URL")
-supabase_key = os.environ.get("SUPABASE_KEY")
+SUPABASE_URL="https://psggxlflowkfoyszdxdc.supabase.co"
+SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBzZ2d4bGZsb3drZm95c3pkeGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI4OTk1MTcsImV4cCI6MjAzODQ3NTUxN30.XJwVSC98bHz8yxhkZxR4DEi7WxEbvboCSNbIfxobvOw"
+
+supabase_url =  SUPABASE_URL#os.environ.get("SUPABASE_URL")
+supabase_key = SUPABASE_KEY #os.environ.get("SUPABASE_KEY")
 
 headers = {
     'apikey': supabase_key,
