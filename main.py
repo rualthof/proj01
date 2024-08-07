@@ -1,8 +1,8 @@
 from dotenv import load_dotenv
 load_dotenv()
-
 import requests
-
+import time
+import asyncio
 import flet as ft
 import os
 
@@ -35,6 +35,19 @@ def main(page: ft.Page):
     print("API: ", api)
     page.add(ft.Text("API: " + api))
 
+    def handler(e):
+      time.sleep(3)
+      page.add(ft.Text("Handler clicked"))
+
+    async def handler_async(e):
+      await asyncio.sleep(3)
+      page.add(ft.Text("Async handler clicked"))
+
+    page.add(
+        ft.ElevatedButton("Call handler", on_click=handler),
+        ft.ElevatedButton("Call async handler", on_click=handler_async)
+    )
+
 
 #supabase8836#
 print("")
@@ -43,10 +56,10 @@ print(os.getenv("VIRTUAL_ENV"))
 print(os.environ.get("VIRTUAL_ENV"))
 print(os.getenv("API"))
 print(os.environ.get("API"))
-print(os.environ)
+#print(os.environ)
 
 
+#/Users/rudimar/.fly/bin/flyctl launch
 
-
-ft.app(main)
+ft.app(main, view=ft.AppView.WEB_BROWSER)
  
